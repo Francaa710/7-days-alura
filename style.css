@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-color: #101828;
+  }
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+ol, ul {
+    list-style: none;
+    margin-right: 15em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 4em;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em 1.3em;
+}
+
+.logo{
+    margin-left: 1em;
+}
+
+button{
+    background: none;
+    border: none;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.entrar{
+    background-color: var(--main-color);
+    padding: 0.8em 1.2em;
+    border-radius: 0.4em;
+}
+
+.flex-item1{
+    margin-right: 3em;
+}
+
+.sobrenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    gap: 2em;
+}
+
+.sobrenos span{
+    color: #8E2424;
+    font-weight: bolder;
+}
+
+.sobrenos h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.sobrenos p{
+    text-align: center;
+    color: #667085;
+    max-width: 50vw;
+    line-height: 1.5em;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 3em;
+
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5em;
+}
+
+.item1 h1{
+    color: #8E2424;
+    line-height: 2.5em;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.item1 span{
+    color: #667085;
+    max-width: 22vw;
+    font-size: 90%;
+    line-height: 140%;
+}
+
+.item1 .itemtitulo{ /*colocando as duas classes, ela tem mais prioridade que a anterior */
+    padding-bottom: 0.7em;
+    font-weight: 700;
+    color: #101828;
+}
+
+.talentos{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talentos span{
+    color: #8E2424;
+    background-color: #8e242442;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 2em;
+}
+
+.talentos h2{
+    font-weight: bolder;
+    margin-bottom: 2em;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.talentos p{
+    color: #667085;
+    margin-bottom: 4em;
+    align-items: center;
+}
+
+.talentos img{
+    width: 80%; /*usando a porcentagem para a largura, ela fica responsiva*/
+}
+
+.menu-vagas{
+    padding-top: 5em;
+}
+
+h3{
+    display: block;
+    max-width: 50%;
+    margin: 0 auto; /*auto, numeros, variações importantes para deixar o conteudo onde eu quiser, prestar atenção no valor AUTO */
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.vaga{
+    display: block;
+    margin: 0 auto;
+    max-width: 46%;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 15px;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.vaga-titulo{
+    font-weight: 800;
+}
+
+
+.disc-vaga{
+    padding: 2em 0 1em 0;
+    color: #667085;
+    display: flex;
+    gap: 2em; /*gap funciona com display:flex*/
+    font-size: 95%;
+}
+
+
+
+
