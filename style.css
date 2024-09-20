@@ -21,13 +21,14 @@ body{
 
 ol, ul {
     list-style: none;
-    margin-right: 15em;
+    margin-right: 15em; /*margem do menu inteiro*/
 }
 
 a{
     text-decoration: none;
     color: var(--text-color);
-    margin-right: 4em;
+    margin-right: 2em; /*margem de cada link */
+    padding: 5px; /*aumenta a area de contato de cada link da lista*/
 }
 
 .container{
@@ -44,7 +45,7 @@ a{
 button{
     background: none;
     border: none;
-    padding-right: 20px;
+    padding: 10px 20px 10px 10px; /*aumenta a area de contato do botao, nao fica exatamente apenas em cima*/
     cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ button{
 
 .item1 span{
     color: #667085;
-    max-width: 22vw;
+    max-width: 21vw;
     font-size: 90%;
     line-height: 140%;
 }
@@ -185,6 +186,106 @@ h3{
     font-size: 95%;
 }
 
+.grid1{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 98%;
+    grid-gap: 3em;
+    padding: 0 8em;
+}
 
+.gri2 {
+    display: flex;
+    flex-direction: column; /*deixou as 3 tag inseridas em forma de coluna "cada uma em uma linha"*/
+    gap: 0.8em;
+    width: 15em;
+}
 
+.gri2 h1{
+    color: #8E2424;
+    font-size: 3em;
+}
 
+.gri2 span{
+    color: var(--text-color);
+    font-size: 90%;
+}
+
+.gri2 .gridtitulo{
+    color: #101828;
+    font-weight: bolder;
+}
+
+.depoimento{
+    background-color: #8e24240a;
+    padding: 3em 1em; /*ira mexer na cor vermelha em volta*/
+    margin: 5em auto; /*ira centralizar */
+    max-width: 60%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimento img{
+    width: 48px;
+    padding-top: 2em;
+}
+
+.depoimento span{
+    color: #8e2424;
+    padding-bottom: 2em;
+    font-weight: bolder;
+}
+
+.depoimento .nome-depo{
+    color: var(--title-color);
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.depoimento .cargo-depo{
+    color: #667085;
+    padding: 0;
+    font-size: 80%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #66708523;
+    padding: 2em 2em 0.5em 2em;
+    gap: 1.5em;
+    color: #667085;
+}
+
+footer h1{
+    color: #101828;
+    font-weight: bolder;
+}
+
+footer span{
+    font-size: 80%;
+    padding-bottom: 0;
+}
+div{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+div > input {
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+    border-color: #66708562;
+    margin-left: 2em;
+    width: 20%;
+}
+
+div button{
+    background-color: var(--main-color);
+    padding: 0.8em 1.2em;
+    border-radius: 0.4em;
+}
