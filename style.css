@@ -70,6 +70,8 @@ button{
     border: none;
     padding: 10px 20px 10px 10px; /*aumenta a area de contato do botao, nao fica exatamente apenas em cima*/
     cursor: pointer;
+    text-decoration: none;
+    color: #101828;
 }
 
 .entrar{
