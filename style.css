@@ -387,9 +387,7 @@ div > input {
         display: none; /*faz o menu de tela grande sumir*/
     }
     .mobile-menu-icon {
-        /*display: block; /*faz o menu mobile aparecer*/
-        display: flex;
-        padding-right: 10px;
+        display: block; /*faz o menu mobile aparecer*/
     }
     .mobile-menu-icon button {
         background-color: transparent; 
@@ -403,14 +401,6 @@ div > input {
         padding-bottom: 1rem;
         background-color: #66708510;
         border-radius: 5px;
-    }
-
-    .container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 1.3em 2.1em;
     }
 
     .mobile-menu a:hover { /*individual para cada opção do menu */
@@ -430,7 +420,7 @@ div > input {
         margin: 0;
     }
     .mobile-menu .flex-item1 button {
-        width: 35%;
+        width: 50%;
     }
     .open { /*função criada com o JS*/
         display: block;
