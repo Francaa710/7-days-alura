@@ -400,7 +400,6 @@ div > input {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
         background-color: #66708510;
         border-radius: 5px;
     }
@@ -422,8 +421,11 @@ div > input {
         margin: 0;
     }
     .mobile-menu .flex-item1 button {
-        width: 50%;
+        width: 40%;
+        display: flex;
+        padding-left: 50px;
     }
+    
     .open { /*função criada com o JS*/
         display: block;
     }
