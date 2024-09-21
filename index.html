@@ -10,28 +10,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
     <nav class="container">
         <div class="logo">
                 <img class="logo" src="_Button base.svg" alt="LOGO">
         </div>
-        <div class="sideMenu">
-            <img src="menu-icon.svg" alt="menuicon">
-        </div>
-        <div class="menu">
-            <div class="link">
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#">Produtos</a>
-                    <a href="#">Recursos</a>
-                    <a href="#">Sobre nós</a>
-                </ul>
-            </div>
+        <div class="link">
+            <ul>
+                <a class="nav-item" href="#">Home</a>
+                <a class="nav-item" href="#">Produtos</a>
+                <a class="nav-item" href="#">Recursos</a>
+                <a class="nav-item" href="#">Sobre nós</a>
+            </ul>
         </div>
         <div class="flex-item1">
             <button>Entrar</button>
             <button class="entrar">Cadastrar</button>
         </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="menu-icon.svg" alt=""></button>
+        </div>
     </nav>
+    <div class="mobile-menu">
+        <ul>
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Produtos</a>
+            <a class="nav-item" href="#">Recursos</a>
+            <a class="nav-item" href="#">Sobre nós</a>
+        </ul>
+        <div class="flex-item1">
+            <button>Entrar</button>
+            <button class="entrar">Cadastrar</button>
+        </div>
+    </div>
+    </header>
+
     <section class="sobrenos">
         <span>Sobre nós</span>
         <h1>Por que somos diferentes?</h1>
@@ -148,4 +161,5 @@
         <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>
