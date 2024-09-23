@@ -353,7 +353,7 @@ div > input {
     }
 
     .gri2 span{
-        max-width: 280px;
+        max-width: 100%;
     }
 
     .talentos{
@@ -428,6 +428,10 @@ div > input {
     
     .open { /*função criada com o JS*/
         display: block;
+    }
+
+    .link{  /*estava bugando na tela de alguns celulares e fazendo com que criasse a barra para a lateral no menu mobile, deu certo vou subir para testar*/
+        width: 1px;
     }
     
 }
